@@ -1,0 +1,138 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #eee;
+}
+
+/* use a more sane box model */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.picker {
+  margin: 64px auto;
+  background-color: #fff;
+  max-width: 800px;
+  text-align: left;
+}
+
+.picker .picker-input {
+}
+
+.picker .picker-input input {
+  width: 100%;
+  font-size: 24px;
+  border: 0;
+  margin: 0;
+  padding: 16px 32px;
+}
+
+.picker .picker-map {
+  width: 100%;
+  height: 400px;
+}
+
+.picker .extra-options {
+  padding: 32px;
+}
+
+.city-walk-map {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 68%;
+  height: 100%;
+  z-index: 2;
+}
+
+.citywalk-list {
+  margin: 0 0 0 68%;
+  padding: 32px;
+  text-align: left;
+  background-color: #fff;
+}
+
+.citywalk-info {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 32px 0;
+}
+
+.citywalk-info li {
+  margin: 0;
+  padding: 0 0 8px 0;
+}
+.citywalk-info li label {
+  display: inline-block;
+  width: 160px;
+  font-weight: bold;
+}
+
+.waypoint {
+}
+.waypoint .waypoint-info {
+  overflow: hidden;
+  display: flex;
+  margin-bottom: -34px;
+}
+
+.waypoint .waypoint-info .number {
+  background-color: #282C34;
+  color: #fff;
+  padding: 8px 16px;
+  border-bottom-right-radius: 4px;
+}
+
+.waypoint .waypoint-info .duration {
+  flex: 1 1 auto;
+  padding: 8px 16px;
+  text-align: right;
+}
+
+.to-next {
+  text-align: center;
+  margin-top: -32px;
+}
+
+.to-next span.time {
+  display: inline-block;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  padding-top: 10px;
+  font-size: 14px;
+  border: 1px solid #D4D4D4;
+  text-align: center;
+  line-height: 10px;
+}
+.to-next span.time em {
+  display: block;
+  font-style: normal;
+  opacity: 0.5;
+  font-size: 10px;
+}
+
+.to-next span.line {
+  display: block;
+  width: 50%;
+  height: 20px;
+  border-right: 1px solid #D4D4D4;
+}
+
+.waypoints .endpoint {
+  text-align: center;
+}
+.waypoints .endpoint div {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 12px;
+  width: 43px;
+  height: 43px;
+}
